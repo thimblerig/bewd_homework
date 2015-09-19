@@ -2,19 +2,19 @@ puts "name an animal"
 animal = gets.chomp
 animal.downcase!
 
-puts animal
+puts "you chose #{animal}"
 
 puts "what sound does your animal make?"
 sound = gets.chomp
 sound.downcase!
-sound = " " + sound + ","
 
-puts sound
+
+puts "you chose #{sound}"
 
 puts "how many sounds does it make?"
-number = gets.chomp
+number = gets.chomp.to_i
 
-puts number
+puts "you chose #{number}"
 
 
-puts "the #{animal} goes #{sound}
+puts "the #{animal} goes#{(" " + sound + "," ) * (number - 1)} #{sound}."
