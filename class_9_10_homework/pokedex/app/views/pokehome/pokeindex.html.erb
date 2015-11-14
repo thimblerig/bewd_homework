@@ -1,0 +1,7 @@
+<h1>Check out all the pokemon!</h1>
+<br>
+<img src="http://i.imgur.com/Z0iQ1DF.jpg?1">
+<br>
+<% @pokemon_object.each do |p| %>
+<li><%= link_to p["name"], pokemon_path(p["resource_uri"])%></li>
+<% end %>

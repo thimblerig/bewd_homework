@@ -1,0 +1,7 @@
+<h1>Welcome To The Login Page!</h1>
+<br>
+<%= form_tag("/mainframe", method: "post") do %>
+  <%= label_tag(:text, "Enter The Secret Code:") %>
+  <%= text_field_tag(:text) %>
+  <%= submit_tag("Submit") %>
+<% end %>

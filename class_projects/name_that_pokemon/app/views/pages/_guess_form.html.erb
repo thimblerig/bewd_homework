@@ -1,0 +1,5 @@
+<%= form_tag("/correct", method: "post") do %>
+      <%= label_tag(:text, "Name That Pokemon:") %>
+      <%= text_field_tag(:text) %>
+      <%= submit_tag("Submit") %>
+    <% end %>

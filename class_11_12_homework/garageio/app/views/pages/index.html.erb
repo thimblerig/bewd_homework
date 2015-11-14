@@ -1,0 +1,5 @@
+<h1>Signor Garageio's Cars</h1>
+<p>Here's All Your Cars Bro</p>
+<% @cars.each do |car| %>
+<li>Make: <%= car.make %>, Model: <%= car.model %>, Year: <%= car.year %>, Nickname: <%= car.nickname %> </li>
+<% end %>

@@ -1,0 +1,12 @@
+<% if  @message.present? %>
+the parrot says: <%= @message %>
+<% end %>
+<hr>
+<h1>Parrot Form</h1>
+<p>Tell me what to say and I'll repeat it</p>
+<%= form_tag("/parrot", method: "get") do %>
+  <%= label_tag(:text, "Say What?") %>
+  <%= text_field_tag(:text) %>
+  <%= submit_tag("Go") %>
+<% end %>
+<br>

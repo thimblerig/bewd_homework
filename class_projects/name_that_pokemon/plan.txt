@@ -1,0 +1,15 @@
+INDEX
+-show picture of pokemon
+-have a form for user to guess
+
+CORRECT
+-show the name of the pokemon
+
+INCORRECT
+-tell them they need to train more
+
+*********
+
+WHAT I NEED
+-pokedex api
+-form to capture their guess 

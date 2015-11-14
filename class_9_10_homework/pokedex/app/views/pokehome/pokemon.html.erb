@@ -1,0 +1,31 @@
+
+<br>
+Pokemon: <%= @poke_name %>
+<br>
+<% if @poke_image == nil %>
+<h1>No Image Available</h1>
+<% else %>
+<img src="<%= @poke_image %>">
+<% end %>
+<br>
+Abilities:
+<br>
+<% @poke_abilities.each do |name|%>
+<%= name["name"] %><br>
+<% end %>
+<br>
+Types:
+<br>
+<% @poke_types.each do |name|%>
+<%= name["name"] %><br>
+<% end %>
+<br>
+<% if @next_evolutions == nil %>
+No more evolutions!
+<% else %>
+Next Evolution: <%= link_to @next_evolutions_name , pokemon_path(@next_evolutions_uri)%>
+<% end %>
+<br>
+<br>
+<a href ="/">Back to Pokedex</a>
+<br>

@@ -1,0 +1,12 @@
+<h1>rock paper scissors goes here</h1>
+<% @weapons %>
+the computer picked: <br>
+  <%= @choice %>
+
+  <% if params[:mychoice]=="rock" %>
+    <hr>
+  You picked rock!
+  <br>
+  the computer picked <%= @choice %>
+
+  <% end %>
